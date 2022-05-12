@@ -18,9 +18,9 @@ class persona:
         #print("Punto de cruce: " + str(punto))
         for _ in range(10):
             if _ < punto:
-                genesCruzados.append(self.genes[i])
+                genesCruzados.append(self.genes[_])
             else:
-                genesCruzados.append(persona2.genes[i])
+                genesCruzados.append(persona2.genes[_])
         return persona(genesCruzados)
 
     #Método que muta los genes de una persona
