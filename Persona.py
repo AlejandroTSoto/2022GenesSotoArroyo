@@ -2,12 +2,10 @@ import secrets
 class persona:
 
     genes = []
-    
     #Método que genera los valores para los genes
-
     def generarGenes(self):
-        aleatorio = secrets.randbelow(2)
         for i in range(10):
+            aleatorio = secrets.randbelow(2)
             self.genes.append(aleatorio)
 
     #Método constructor de la clase persona que recoge una lista de genes
@@ -40,4 +38,3 @@ class persona:
             else:
                 genesMutados.append(self.genes[i])
         return persona(genesMutados)
-        

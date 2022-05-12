@@ -5,10 +5,11 @@ poblacion = []
 poblacionCruzadaMutada = []
 genes = []
 personasCruzadasMutadas = []
-punto = secrets.randbelow(10)
+
 
 # Método que genera una población con personas
 def generarPoblacion(x):
+    punto = secrets.randbelow(10)
     for i in range(x):
         persona = Persona.persona(genes)
         persona.generarGenes()
