@@ -4,7 +4,7 @@ class persona:
     genes = []
     #Método que genera los valores para los genes
     def generarGenes(self):
-        for i in range(10):
+        for _ in range(10):
             aleatorio = secrets.randbelow(2)
             self.genes.append(aleatorio)
 
@@ -16,8 +16,8 @@ class persona:
     def cruzarPunto(self, persona2, punto):
         genesCruzados = []
         #print("Punto de cruce: " + str(punto))
-        for i in range(10):
-            if i < punto:
+        for _ in range(10):
+            if _ < punto:
                 genesCruzados.append(self.genes[i])
             else:
                 genesCruzados.append(persona2.genes[i])
@@ -27,14 +27,14 @@ class persona:
     def mutarPersona(self, probabilidad):
         genesMutados = []
 
-        for i in range(10):
+        for _ in range(10):
             aleatorio = secrets.randbelow(2)
             if aleatorio <= probabilidad:
                 #print("Gen mutado: " + str(i))
-                if self.genes[i] == 0:
+                if self.genes[_] == 0:
                     genesMutados.append(1)
                 else:
                     genesMutados.append(0)
             else:
-                genesMutados.append(self.genes[i])
+                genesMutados.append(self.genes[_])
         return persona(genesMutados)

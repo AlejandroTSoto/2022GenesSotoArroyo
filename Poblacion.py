@@ -8,7 +8,7 @@ personasCruzadasMutadas = []
 
 # Método que genera una población con personas
 def generarPoblacion(x):
-    for i in range(x):
+    for _ in range(x):
         persona = Persona.persona(genes)
         persona.generarGenes()
         poblacion.append(persona)
