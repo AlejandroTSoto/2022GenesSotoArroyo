@@ -5,7 +5,6 @@ poblacion = []
 poblacionCruzadaMutada = []
 genes = []
 personasCruzadasMutadas = []
-punto = secrets.randbelow(10)
 
 # Método que genera una población con personas
 def generarPoblacion(x):
@@ -21,6 +20,7 @@ def cruzarMutarPersonas(grupoPersonas, probabilidad):
         print("La población se ha mutado")
     for persona in grupoPersonas:
         aleatorio = secrets.randbelow(len(grupoPersonas))
+        punto = secrets.randbelow(10)
         personaCruzada = persona.cruzarPunto(grupoPersonas[aleatorio], punto)
         if probabilidad < 0.5:
             personaMutada = personaCruzada.mutar(probabilidad)
