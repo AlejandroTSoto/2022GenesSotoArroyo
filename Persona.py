@@ -3,7 +3,7 @@ class persona:
 
     genes = []
     #Método que genera los valores para los genes
-    def generarGenes(self):
+    def generar_Genes(self):
         for _ in range(10):
             aleatorio = secrets.randbelow(2)
             self.genes.append(aleatorio)
@@ -13,7 +13,7 @@ class persona:
         self.genes = genes
 
     #Método que mezcla a dos personas y generar una persona nueva indicando el punto de cruce
-    def cruzarPunto(self, persona2, punto):
+    def cruzar_Punto(self, persona2, punto):
         genesCruzados = []
         #print("Punto de cruce: " + str(punto))
         for _ in range(10):
@@ -24,7 +24,7 @@ class persona:
         return persona(genesCruzados)
 
     #Método que muta los genes de una persona
-    def mutarPersona(self, probabilidad):
+    def mutar_Persona(self, probabilidad):
         genesMutados = []
 
         for _ in range(10):
