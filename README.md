@@ -3,6 +3,5 @@ En este proyecto se ha desarrollado un programa en el lenguaje Python en el que 
 
 El objetivo principal de este proyecto es principalmente el estudio de calidad del software desarrollado haciendo uso de herramientas como SonarCloud y Codacy. Los resultados obtenidos tras haber utilizado dichas herramientas son los siguientes:  
 
-- Codacy: [Enlace a Codacy](https://app.codacy.com/gh/PRIS2/2022GenesSotoArroyo/dashboard)   
-- SonarCloud: [Enlace a SonarCloud]()   
-
+- Codacy:[Enlace a Codacy](https://app.codacy.com/gh/PRIS2/2022GenesSotoArroyo/dashboard)   
+- SonarCloud:[Enlace a SonarCloud]()    
